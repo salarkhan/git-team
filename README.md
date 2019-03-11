@@ -1,6 +1,6 @@
 # git-pear
 
-A simple utility for sharing credit for commits while working on teams.
+A simple utility for sharing credit for commits while working in pairs.
 
 ## installation
 ```
@@ -30,8 +30,5 @@ export GIT_API_TOKEN=21231381thisis1231a123github123token8
 ```
 
 
-## example
-```
-Using pear on a brand new repo
-```
+## usage
 ![pear init](https://cloud.githubusercontent.com/assets/3118416/4260961/417ac312-3b57-11e4-9724-634c2b75f134.png)
