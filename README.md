@@ -30,12 +30,7 @@ export GIT_API_TOKEN=21231381thisis1231a123github123token8
 ```
 
 
-## examples!
-```
-The result on Github 
-```
-![github gui](https://cloud.githubusercontent.com/assets/3118416/4260962/539cbe56-3b57-11e4-8ffd-3cef13ac32cb.png)
-
+## example
 ```
 Using pear on a brand new repo
 ```
