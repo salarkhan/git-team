@@ -1,6 +1,6 @@
 # git-pear
 
-A simple utility for sharing credit for commits while working in pairs.
+A simple utility for sharing commit ownership while working in pairs.
 
 ## installation
 ```
