@@ -1,4 +1,4 @@
-#post-commit hook
+# post-commit hook
 Pear believes in the Rule of Silence. It also believes that the user should know as little as possible about Pear's inner workings. In order to achieve this, the meat of it's implementation lives in a git commit hook.
 
 In the hook, 4 distinct actions occur:
@@ -13,5 +13,5 @@ In the hook, 4 distinct actions occur:
     * Pear passes `--quiet` to suppress unnecessary additional information that is sent to stdout. #RuleOfSilence
     * Pear passes `--allow-empty` because while the initial commit is ok with an empty commit if passed `allow-empty`, the amended commit is not. 
 
-#libexec
-Pear believes in single responsibility. In order to achieve this, each piece of functionality lives in a self contained program. Each of these programs lives in libexec.
+# libexec
+Pear believes in single responsibility. In order to achieve this, each piece of functionality lives in a self contained program within libexec.
