@@ -11,8 +11,13 @@ git config --local user.name $(pear get-committer | cut -d '@' -f 1)
 
 # Save current author before cycling through the list
 author=$(pear get-author)
-name=$(pear get-author | cut -d '@' -f 1)
+
 pear cycle
 
+# Get names, join them by ampersands, trim trailing bytes
+pear_name=$(pear get-full-names |
+  awk '{printf "%s & ", $0}' | 
+    rev | cut -c 4- | rev)
+
 # The commit line must run last.
-git commit --allow-empty --amend --author "$name <$author>" --no-edit --quiet 
+git commit --allow-empty --amend --author "$pear_name <$author>" --no-edit --quiet 

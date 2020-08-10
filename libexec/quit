@@ -2,14 +2,17 @@
 
 git_dir=$(git rev-parse --git-dir)
 
-# Blow away hook, team files, and current local user
+# Blow away hook file
 rm -f $git_dir"/hooks/post-commit"
 
 # Remove any local git information we have set
-pear get-emails > /dev/null 2>&1 && 
-  git config --local --remove-section team
+pear get-emails > /dev/null 2>&1 &&
+  git config --local --remove-section pear
 
-pear get-name > /dev/null 2>&1 && 
+pear get-username > /dev/null 2>&1 && 
   git config --local --remove-section user
+
+pear get-full-names > /dev/null 2>&1 && 
+  git config --local --remove-section session
 
 exit 0
